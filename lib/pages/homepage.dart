@@ -53,7 +53,6 @@ class _HomePageState extends State<HomePage> {
       ],
     );
   }
-
   Widget _featuredSection() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,7 +79,6 @@ class _HomePageState extends State<HomePage> {
       ],
     );
   }
-
   Widget _featuredCard(int index) {
     return InkWell(
       onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context)=> DetailsRecipe()));},
@@ -128,7 +126,6 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-
   Widget _newSection() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
