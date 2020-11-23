@@ -17,4 +17,7 @@ class ToolsUtilities{
     "https://images.unsplash.com/photo-1605735361719-e1cd1d5ce0b2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNTB8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60",
     "https://images.unsplash.com/photo-1605244863941-3a3ed921c60d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMDB8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60"
   ];
+
+  static final ourVisionParagraph ="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries";
+  static final ourMissionParagraph ="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English";
 }
