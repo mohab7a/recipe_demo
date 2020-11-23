@@ -4,6 +4,7 @@ class ToolsUtilities{
   static final mainColor = Color(0xff7a9c59);
   static final secondColor = Color(0xff313033);
   static final whiteColor = Color(0xffffffff);
+  static final favColor = Color(0xfff20033);
 
   static List imageRecipes =[
     "https://images.unsplash.com/photo-1605713288610-00c1c630ca1e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=500&q=60",
