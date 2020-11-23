@@ -20,7 +20,7 @@ class _StartPageState extends State<StartPage> {
       InfoPage(),
       CategoriesPage(),
       HomePage(),
-      AllRecipesPage(),
+      AllRecipesPage("All Recipes"),
       FavoritePage(),
     ];
     return Scaffold(

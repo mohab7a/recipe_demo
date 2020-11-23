@@ -4,6 +4,8 @@ import 'package:recipe_demo/utilities/toolsutilites.dart';
 import 'detailsrecipe.dart';
 
 class AllRecipesPage extends StatefulWidget {
+  final String headTitle;
+  AllRecipesPage(this.headTitle);
   @override
   _AllRecipesPageState createState() => _AllRecipesPageState();
 }
@@ -15,7 +17,7 @@ class _AllRecipesPageState extends State<AllRecipesPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: ToolsUtilities.mainColor,
-        title: Text("All Recipes"),
+        title: Text(widget.headTitle),
         centerTitle: true,
       ),
       body: SingleChildScrollView(

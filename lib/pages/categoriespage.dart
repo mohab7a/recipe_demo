@@ -29,15 +29,15 @@ class _CategoriesPageState extends State<CategoriesPage> {
                 child: GridView.count(crossAxisCount: 3,
                 shrinkWrap: true,
                 children: [
-                  _categoryCard(ToolsUtilities.imageRecipes[0]),
-                  _categoryCard(ToolsUtilities.imageRecipes[1]),
-                  _categoryCard(ToolsUtilities.imageRecipes[2]),
-                  _categoryCard(ToolsUtilities.imageRecipes[3]),
-                  _categoryCard(ToolsUtilities.imageRecipes[4]),
-                  _categoryCard(ToolsUtilities.imageRecipes[5]),
-                  _categoryCard(ToolsUtilities.imageRecipes[6]),
-                  _categoryCard(ToolsUtilities.imageRecipes[7]),
-                  _categoryCard(ToolsUtilities.imageRecipes[8]),
+                  _categoryCard(ToolsUtilities.imageRecipes[0],"Pizza"),
+                  _categoryCard(ToolsUtilities.imageRecipes[1],"Chinese"),
+                  _categoryCard(ToolsUtilities.imageRecipes[2],"Italian"),
+                  _categoryCard(ToolsUtilities.imageRecipes[3],"Fast foods"),
+                  _categoryCard(ToolsUtilities.imageRecipes[4],"Sweets"),
+                  _categoryCard(ToolsUtilities.imageRecipes[5],"Burger"),
+                  _categoryCard(ToolsUtilities.imageRecipes[6],"Lunch"),
+                  _categoryCard(ToolsUtilities.imageRecipes[7],"Breakfast"),
+                  _categoryCard(ToolsUtilities.imageRecipes[8],"Juise"),
                 ],),
               ),
             ),
@@ -73,10 +73,10 @@ class _CategoriesPageState extends State<CategoriesPage> {
       ],
     );
   }
-  Widget _categoryCard(String imageName){
+  Widget _categoryCard(String imageName ,String categoryName){
     return InkWell(
       onTap: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context) => AllRecipesPage()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => AllRecipesPage(categoryName)));
       },
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -89,7 +89,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Image.network(imageName,fit: BoxFit.cover,width: 50,height: 50,),
-              Text('sweets',style: TextStyle(
+              Text(categoryName,style: TextStyle(
                 color: ToolsUtilities.whiteColor,fontWeight: FontWeight.bold
               ),)
             ],
